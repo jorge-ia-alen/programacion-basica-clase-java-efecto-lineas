@@ -9,12 +9,15 @@ for(l=0; l < lineas; l++)
 {
     yi = 10 * l;
     xf = 10 * (l + 1);
+    dibujarLinea(colora, 0, yi, xf, 500);
     dibujarLinea(colora, 500, yi, xf, 0);
     console.log("linea" + 1);
 }
 
 dibujarLinea(colora, 499,1,0,1);
 dibujarLinea(colora, 499,1,499,499);
+dibujarLinea(colora, 1,1,0,499);
+dibujarLinea(colora, 1,499,499,499);
 
 function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal)
 {
